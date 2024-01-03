@@ -153,7 +153,6 @@ section .title{
 /* home section styling */
 .home{
     display: flex;
-    /*background: url("images/banner.jpg") no-repeat center;*/
     background-color: #1a1a1a;
     height: 100vh;
     color: #fff;
@@ -265,7 +264,12 @@ section .title{
 .skills .skills-content .left p{
     text-align: justify;
 }
-
+.skills .skills-content .right .bars .info{
+    justify-content: center;
+}
+.skills .skills-content .right{
+    justify-content: center;
+}
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
