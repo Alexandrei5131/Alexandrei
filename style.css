@@ -449,6 +449,9 @@ section .title{
 .contact .contact-content .row .info .linkedIn:hover, .gmail:hover{
     color: #408000;
 }
+.contact .contact-content .row .info .gmail:hover{
+    color: #408000;
+}
 .contact .contact-content .row i{
     font-size: 25px;
     color: #408000;
