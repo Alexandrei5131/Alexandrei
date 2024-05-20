@@ -35,10 +35,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .projects, .skills, .contact, footer{
+.about, .projects, .certifications, .certificates , .skills, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
+.about .about-content, 
 .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +56,7 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
+
 section .title{
     position: relative;
     text-align: center;
@@ -211,7 +212,7 @@ section .title{
 }
 
 /* projects section styling */
-.projects, .contact{
+.projects, .contact, .certificates{
     color:#fff;
     background: #1a1a1a;
 }
@@ -249,6 +250,140 @@ section .title{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+/* certifications section styling */
+.certifications {
+    justify-content: center;
+}
+.certifications .carousel .card{
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.certifications .carousel .card:hover{
+    background: #408000;
+}
+.certifications .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #222;
+}
+.certifications .carousel .card .box .verify{
+    color: #222;
+    background-color: #408000;
+    border-radius: 10%;
+    padding: 1vh;
+}
+.certifications .carousel .card:hover .box .verify{
+    background: #fff;
+}
+.certifications .carousel .card:hover .box{
+    transform: scale(1.10);
+}
+.certifications .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.certifications .carousel .card img{
+    height: 180px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 5px solid #408000;
+    transition: all 0.3s ease;
+}
+.certifications .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #408000!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #408000!important;
+}
+
+/* certificates section styling */
+.certificates .carousels .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    
+}
+.certificates .carousels .card:hover{
+    background: #408000;
+}
+.certificates .carousels .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.certificates .carousels .card:hover .box{
+    transform: scale(1.05);
+}
+.certificates .carousels .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.certificates .carousels .card img{
+    height: 150px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 5px solid #408000;
+    transition: all 0.3s ease;
+}
+.certificates .carousels .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #408000!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #408000!important;
 }
 
 /* skills section styling */
@@ -308,10 +443,10 @@ section .title{
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row .info #linkedIn{
+.contact .contact-content .row .info .linkedIn{
     color: #fff;
 }
-.contact .contact-content .row .info #linkedIn:hover{
+.contact .contact-content .row .info .linkedIn:hover, .gmail:hover{
     color: #408000;
 }
 .contact .contact-content .row i{
