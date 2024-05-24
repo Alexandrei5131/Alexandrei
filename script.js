@@ -64,7 +64,7 @@ $(document).ready(function(){
     // owl carousel script certificates
     $('.carousel1').owlCarousel({
         margin: 20,
-        loop: true,
+        loop: false,
         autoplay: true,
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
