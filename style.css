@@ -109,10 +109,15 @@ section .title{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #408000;
+
+    background-color: #408000;
+    padding: 5px;
+    border-radius: 5px;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #408000;
+    background-color: #fff;
+
 }
 
 /* menu btn styling */
@@ -263,9 +268,6 @@ section .title{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.certifications .carousel .card:hover{
-    background: #408000;
-}
 .certifications .carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -274,34 +276,54 @@ section .title{
     transition: all 0.3s ease;
     color: #222;
 }
-.certifications .carousel .card .box .verify{
-    color: #222;
-    background-color: #408000;
-    border-radius: 10%;
-    padding: 1vh;
-}
-.certifications .carousel .card:hover .box .verify{
-    background: #fff;
-}
-.certifications .carousel .card:hover .box{
-    transform: scale(1.10);
-}
-.certifications .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
 .certifications .carousel .card img{
     height: 180px;
     width: 280px;
     object-fit: cover;
     border-radius: 10%;
-    border: 5px solid #408000;
+    border: 4px solid #1a1a1a;
     transition: all 0.3s ease;
 }
 .certifications .carousel .card:hover img{
-    border-color: #fff;
+    border-color: #408000;
 }
+.certifications .carousel .card:hover .box{
+    transform: scale(1.10);
+}
+.certifications .carousel .card .box .ViewVerify a{
+    color: #222;
+}
+.certifications .carousel .card .box .ViewVerify{
+    display: flex;
+    flex-direction: row;
+}
+.certifications .carousel .card .box .ViewVerify .view{
+    color: #222;
+    background-color: #408000;
+    border-radius: 10%;
+    padding: 1vh;
+    margin-right:5px ;
+}
+.certifications .carousel .card .box .ViewVerify .view:hover{
+    transform: scale(1.10);
+}
+.certifications .carousel .card .box .ViewVerify .verify{
+    color: #222;
+    background-color: #408000;
+    border-radius: 10%;
+    padding: 1vh;
+    margin-left: 5px;
+}
+.certifications .carousel .card .box .ViewVerify .verify:hover{
+    transform: scale(1.10);
+}
+
+.certifications .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -325,7 +347,7 @@ section .title{
 }
 
 /* certificates section styling */
-.certificates .carousels .card{
+.certificates .carousel1 .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -334,10 +356,10 @@ section .title{
     transition: all 0.3s ease;
     
 }
-.certificates .carousels .card:hover{
+.certificates .carousel1 .card:hover{
     background: #408000;
 }
-.certificates .carousels .card .box{
+.certificates .carousel1 .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -345,15 +367,50 @@ section .title{
     transition: all 0.3s ease;
     color: #fff;
 }
-.certificates .carousels .card:hover .box{
+.certificates .carousel1 .card:hover .box{
     transform: scale(1.05);
 }
-.certificates .carousels .card .text{
+.certificates .carousel1 .card:hover .box .ViewVerify .view,.verify{
+    background-color: #222;
+    color: #fff;
+}
+.certificates .carousel1 .card:hover .box .ViewVerify .verify{
+    background-color: #222;
+    color: #fff;
+}
+.certificates .carousel .card .box .ViewVerify a{
+    color: #222;
+}
+.certificates .carousel1 .card .box .ViewVerify{
+    display: flex;
+    flex-direction: row;
+}
+.certificates .carousel1 .card .box .ViewVerify .view{
+    color: #222;
+    background-color: #408000;
+    border-radius: 10%;
+    padding: 1vh;
+    margin-right:5px ;
+}
+.certificates .carousel1 .card .box .ViewVerify .view:hover{
+    transform: scale(1.10);
+}
+.certificates .carousel1 .card .box .ViewVerify .verify{
+    color: #222;
+    background-color: #408000;
+    border-radius: 10%;
+    padding: 1vh;
+    margin-left: 5px;
+}
+.certificates .carousel1 .card .box .ViewVerify .verify:hover{
+    transform: scale(1.10);
+}
+.certificates .carousel1 .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.certificates .carousels .card img{
+.certificates .caroucarousel1sels .card img{
     height: 150px;
     width: 280px;
     object-fit: cover;
@@ -361,7 +418,7 @@ section .title{
     border: 5px solid #408000;
     transition: all 0.3s ease;
 }
-.certificates .carousels .card:hover img{
+.certificates .carousel1 .card:hover img{
     border-color: #fff;
 }
 .owl-dots{

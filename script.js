@@ -62,7 +62,7 @@ $(document).ready(function(){
         }
     });
     // owl carousel script certificates
-    $('.carousels').owlCarousel({
+    $('.carousel1').owlCarousel({
         margin: 20,
         loop: true,
         autoplay: true,
