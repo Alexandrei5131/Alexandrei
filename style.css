@@ -280,7 +280,7 @@ section .title{
     height: 180px;
     width: 280px;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 6px;
     border: 4px solid #1a1a1a;
     transition: all 0.3s ease;
 }
@@ -388,7 +388,7 @@ section .title{
 .certificates .carousel1 .card .box .ViewVerify .view{
     color: #222;
     background-color: #408000;
-    border-radius: 10%;
+    border-radius: 6px;
     padding: 1vh;
     margin-right:5px ;
 }
@@ -398,7 +398,7 @@ section .title{
 .certificates .carousel1 .card .box .ViewVerify .verify{
     color: #222;
     background-color: #408000;
-    border-radius: 10%;
+    border-radius: 6px;
     padding: 1vh;
     margin-left: 5px;
 }
@@ -415,7 +415,6 @@ section .title{
     width: 280px;
     object-fit: cover;
     border-radius: 10%;
-    border: 5px solid #408000;
     transition: all 0.3s ease;
 }
 .certificates .carousel1 .card:hover img{
@@ -444,33 +443,25 @@ section .title{
 }
 
 /* skills section styling */
-
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
-.skills .skills-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-}
-.skills .skills-content .right .bars .info{
+.skills .skills-content .columnSkills{
+    width: 100%;
     justify-content: center;
-}
-.skills .skills-content .right{
-    justify-content: center;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
     display: flex;
-    margin-bottom: 5px;
-    align-items: center;
+    flex-wrap: wrap;
 }
-.skills .skills-content .right span{
+
+.skills .skills-content .columnSkills .info{
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+.skills .skills-content .columnSkills .info .infoLogo{
+    height: 10vh;
+    width: auto;
+}
+.skills .skills-content .columnSkills span{
     font-weight: 500;
     font-size: 18px;
 }
@@ -500,18 +491,27 @@ section .title{
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row .info .linkedIn{
-    color: #fff;
-}
-.contact .contact-content .row .info .linkedIn:hover{
+.contact .contact-content .row .info .facebook:hover{
     color: #408000;
 }
-.contact .contact-content .row .info .gmail:hover{
+.contact .contact-content .row .info .email:hover{
+    color: #408000;
+}
+.contact .contact-content .row .info .linkedIn:hover{
     color: #408000;
 }
 .contact .contact-content .row i{
     font-size: 25px;
     color: #408000;
+}
+.contact .contact-content .row .name{
+    margin-right: 3px;
+}
+.contact .contact-content .row .loc{
+    margin-right: 6px;
+}
+.contact .contact-content .row .linkedIn{
+    margin-right: 4px;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -627,7 +627,9 @@ section .title{
     .skills .skills-content .left .text{
         font-size: 19px;
     }
-
+    .contact .contact-content .row .info{
+        margin-left: 20px;
+    }
     .scroll-up-btn{
         right: 15px;
         bottom: 15px;
