@@ -794,8 +794,11 @@ transition: all 0.3s ease;
     .projects .proj-content .card{
         width: 100%;
     }
-}
 
+}
+@media (min-width:501px) {
+
+}
 @media (max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;
@@ -817,5 +820,5 @@ transition: all 0.3s ease;
         font-size: 23px;
         line-height: 38px;
     }
-    
+
 }
